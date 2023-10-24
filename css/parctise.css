@@ -1,0 +1,362 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+ul li {
+  list-style-type: none;
+  display: inline-block;
+  margin-right: 23px;
+  margin-left: 33px;
+}
+
+.page {
+  height: 100vh;
+
+  background-color: #b5a2a2;
+  display: grid;
+  grid-template-columns: repeat(10, 1fr);
+  grid-template-rows: 40px auto auto;
+  grid-template-areas: "logo nav nav nav nav nav nav nav  nav nav" "cont cont cont cont cont cont cont cont cont side" " foot foot foot foot foot foot foot foot foot foot";
+}
+
+.page h2 {
+  grid-area: logo;
+  background-color: antiquewhite;
+  color: #000;
+}
+
+nav {
+  grid-area: nav;
+  background-color: rgb(150, 97, 27);
+  color: #fffefe;
+}
+section {
+  grid-area: cont;
+  background-color: rgb(27, 150, 66);
+  color: #00fffb;
+}
+aside {
+  grid-area: side;
+  background-color: rgb(195, 155, 102);
+  color: #004cff;
+}
+footer {
+  grid-area: foot;
+  background-color: rgb(187, 102, 195);
+  color: #ffffff;
+}
+
+.grid {
+  background-color: #e9e4e4;
+  padding: 20px;
+  width: 800px;
+  height: 400px;
+  position: relative;
+  right: -300px;
+
+  display: grid;
+  grid-template-columns: auto repeat(2, 1fr) auto;
+  grid-template-rows: 1fr;
+
+  gap: 15px 15px;
+}
+
+.grid div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #403f3f;
+  color: white;
+
+  font-size: 20px;
+}
+
+.grid-1 {
+  background-color: #ddd;
+  padding: 20px;
+  width: 800px;
+  height: 400px;
+  margin: 10px auto;
+  display: grid;
+
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 45px 1fr;
+
+  gap: 15px 15px;
+}
+
+.grid-1 div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 20px;
+  background-color: #607d8b;
+  color: white;
+}
+
+.hs {
+  position: relative;
+  top: -110px;
+  left: 10px;
+  color: rgb(220, 208, 208);
+  background-color: #627f8d;
+}
+.job {
+  position: relative;
+  top: -110px;
+  left: 10px;
+  color: rgb(220, 208, 208);
+  background-color: #627f8d;
+}
+
+.grid-2 {
+  background-color: #c7c4c4;
+  width: 900px;
+  height: 600px;
+  margin: 10px auto;
+  padding: 10px;
+  font-size: 25px;
+  display: grid;
+  gap: 15px 15px;
+  grid-template-columns: repeat(5, 1fr);
+}
+
+.grid-2 div {
+  background-color: #548891;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.eight {
+  grid-area: 1/1/2/6;
+}
+
+.two {
+  grid-area: 2/4/3/6;
+}
+
+.six {
+  grid-area: 3/1/4/3;
+}
+.five {
+  grid-area: 4/1/5/3;
+}
+.seven {
+  grid-area: 5/1/6/3;
+}
+
+.four {
+  grid-area: 3/3/6/6;
+}
+
+.three {
+  grid-area: 2/1/3/4;
+}
+
+.one {
+  grid-area: 6/1/7/6;
+}
+/* transform lists */
+.maly .call {
+  background-color: #627f8d;
+  padding: 10px;
+  width: 200px;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 10px auto;
+  color: white;
+  font-size: 20px;
+  transition: 1s;
+  border-radius: 40%;
+  transform-origin: 50% 50%;
+
+  /* transform: scale(3); */
+  /* transform: rotate(320deg); */
+  /* transform: translate(-140px, -80px); Translate is the best thing for moving elements  */
+  /* transform: skew(15deg) */
+  /* Matrix is take six elements, which is (scaleX(), scaleY(), translateY, translateX, skewY, skewX)*/
+}
+
+.maly .call:hover {
+  border-width: 5px 0px 5px 8px;
+  border-style: solid;
+  border-color: #ff3c00;
+  transform: scale(2.3) rotate(5deg) skew(15deg) translate(-40px);
+}
+
+.dis {
+  width: 243px;
+  height: 76px;
+  background-color: rgb(150, 97, 27);
+  margin: 33px auto;
+  color: white;
+  font-size: 30px;
+  perspective: 33px;
+  transform: rotate3d(71, 11, -3, -19deg);
+}
+
+.mosa {
+  transform: translate3d(47px, -15px, -13px);
+  background-color: blueviolet;
+  text-align: center;
+}
+
+.conter {
+  margin: 40px auto;
+  width: 300px;
+  perspective: 400px;
+}
+
+.box {
+  position: relative;
+  width: 200px;
+  height: 150px;
+  transform-style: preserve-3d;
+  transition: transform 0.7s;
+}
+.box:hover {
+  transform: scale(1.3) rotateY(-180deg);
+}
+
+.box .face {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  backface-visibility: hidden;
+}
+
+.box .front {
+  background-color: rgb(120, 0, 241);
+}
+.box .back {
+  background-color: rgb(69, 183, 9);
+  transform: rotateY(180deg);
+}
+
+.shdaow {
+  width: 50px;
+  height: 50px;
+  border: solid rgb(214, 36, 36) 5px;
+  border-radius: 50%;
+  border-right-color: transparent;
+  margin: auto;
+  background-color: rgb(17, 3, 3);
+
+  /* animations */
+  animation-name: change-color;
+  animation-duration: 1.9s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  /* animation-direction: alternate; */
+  /* animation-delay: -6; */
+  /* animation-fill-mode: backwards; */
+  animation-play-state: paused;
+}
+
+@keyframes change-color {
+  0% {
+    transform: translate(0px) rotate(0deg);
+  }
+
+  100% {
+    background-color: #004cff;
+
+    transform: translate(-110px, 30px) rotate(1turn);
+  }
+}
+
+/* section */
+
+/* .class.divs {
+  color: rgb(35, 161, 115);
+  transform: rotate(.02turn) translate(50%, 70px)
+}
+
+p .slass {
+  color: rgb(0, 86, 216);
+  transform: rotate(.02turn) translate(50%, 70px)
+} 
+.slass>div {
+  color: rgb(8, 23, 10);
+  transform: translate(50%, 70px)
+} 
+
+div > p {
+  transform: translate(50%,110px);
+  color: rgb(255, 0, 0);
+
+} */
+
+/* span~ p {
+  background-color: #a6afc2;
+}
+p~ div {
+  background-color: #a1a5ae;
+}
+
+/* title [title or before it ~, *, ^] */
+/* [title^='one'] {
+  background-color: #403f3f;
+  color: white;
+
+}
+
+/* <!-- child and type selectors --> */
+/* h3:first-child{
+  color:rgb(0, 86, 216)
+}
+h3:last-child{
+  color:rgb(137, 0, 216)
+}
+h4:first-of-type{
+  color:rgb(216, 0, 0)
+} */
+
+/* h4:last-of-type {
+  background-color: #c4cacd;
+}
+
+h2:only-child {
+  background-color: #c4cacd;
+  color: #830606;
+}
+h2:only-of-type {
+  background-color: #c4cacd;
+  color: #ff4141;
+}
+
+/* Nth / Not:  nth-last-of-type nth-last-child*/
+
+/* .number div:not(:last-child) {
+  background-color: navajowhite;
+} */
+
+
+
+/* .mains div.main.red{
+  color:red;
+}
+
+.parent  div:nth-child(2) {
+  color: red;
+
+}
+
+.lades > div[title]:not(.no-need){
+  color: red;
+  } */  
+
+.hanan  div:nth-child(2) div {
+  color: red;
+}

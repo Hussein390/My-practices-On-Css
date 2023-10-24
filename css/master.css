@@ -1,0 +1,133 @@
+h1 {
+    color: #ff3939;
+    text-align: left;
+    position: relative;
+    bottom: 18px;
+    
+}
+
+span a{
+    
+    text-decoration: none;
+    text-align: center;
+    padding: 10px;
+    margin-right: 44px;
+    background-color: #cad0dc;
+    display: inline-block;
+    border-radius: 8px;
+    border: 2px solid rgb(129, 56, 56);
+    position: relative;
+    top: -118px;
+    right: -260px;
+    
+    
+}
+
+
+main p {
+    background-color: rgb(241, 255, 247);
+    word-spacing: 3px;
+    color: #1100ff;
+    font-size: 30px;
+    
+    font-family: 'Cairo', sans-serif;
+    font-family: 'Roboto', sans-serif;
+    
+}
+
+table {
+    width: 500px;
+    margin: 20px;
+
+}
+
+table thead{
+    background-color: #464298;
+    padding: 10px;
+    font-size: 25px;
+    color: #ffffff;
+    text-align: center;
+    margin: 10px;
+}
+
+table tbody td {
+    background-color: #eee;
+    padding: 6px;
+    width: 30px;
+    font-size: larger;
+    color: #863d38;
+    font-family: 'Roboto', sans-serif;
+    border: 1px solid rgb(53, 62, 122);
+}
+
+.h1 h2{
+    color: #25ac0d;
+    position: relative;
+    border: 2px #373f50 solid;
+    left: 5%;
+    bottom: -23px;
+    width: fit-content;
+    font-style: italic;
+    display: inline-block;
+    border-radius: 8px;
+    padding: 10px;
+    background-color: #ebf2ff;
+    margin-right: 324px;
+}
+
+.h1 .h7{
+    position: relative;
+    left: 33px;
+}
+
+.p {
+    color: hwb(0 19% 51%);
+    font-size: 30px;
+    word-spacing: 2px;
+    font-family: 'Cairo', sans-serif;
+    font-family: 'Roboto', sans-serif;
+
+}
+
+.huseo {
+    
+    
+    position: relative;
+}
+
+.huseo::before {
+    content: '';
+    position: absolute;
+    top: -71px;
+    left: 0;
+    width: 100%;
+    height: 4px;
+    background-image: linear-gradient(
+        to right,
+        blue,
+        yellow,
+        black,
+        gray
+    );
+}
+
+.clasy, .maly {
+    transition-duration: 1s;
+    transition-timing-function: ease;
+    transition-delay: .4s; 
+}
+
+.clasy, .maly:hover {
+    margin-right: 100px;
+    width: 300px;
+}
+
+.hana  p{
+    
+    background-color: #a5b0c4;
+}
+
+.hana [title="Elzero"]:last-child:not(.no-need) {
+    color: red;
+    font-size: 30px;
+}
